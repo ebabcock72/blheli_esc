@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:blheli_esc-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -197,7 +198,7 @@ Wire Wire Line
 Connection ~ 9850 1400
 Wire Wire Line
 	9850 1400 9850 1500
-Text GLabel 10700 1300 2    50   Output ~ 0
+Text GLabel 2850 4650 0    50   Input ~ 0
 PHASE_A
 Connection ~ 9850 1300
 Wire Wire Line
@@ -729,7 +730,7 @@ U 1 1 5C2CCA77
 P 6000 1400
 F 0 "L1" V 5822 1400 50  0000 C CNN
 F 1 "47uH" V 5913 1400 50  0000 C CNN
-F 2 "Inductor_SMD:L_12x12mm_H4.5mm" H 6000 1400 50  0001 C CNN
+F 2 "blheli_esc:inductor_3x3mm" H 6000 1400 50  0001 C CNN
 F 3 "~" H 6000 1400 50  0001 C CNN
 	1    6000 1400
 	0    1    1    0   
@@ -805,104 +806,104 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5C2EF43A
+P 3050 3600
+F 0 "TP2" V 3004 3787 50  0000 L CNN
+F 1 "C2CK" V 3095 3787 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3250 3600 50  0001 C CNN
+F 3 "~" H 3250 3600 50  0001 C CNN
+	1    3050 3600
+	0    1    1    0   
+$EndComp
+Text GLabel 2850 3600 0    50   Input ~ 0
+C2CK
+Wire Wire Line
+	2850 3600 3050 3600
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5C2F3D95
+P 3050 3800
+F 0 "TP3" V 3004 3987 50  0000 L CNN
+F 1 "C2D" V 3095 3987 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3250 3800 50  0001 C CNN
+F 3 "~" H 3250 3800 50  0001 C CNN
+	1    3050 3800
+	0    1    1    0   
+$EndComp
+Text GLabel 2850 3800 0    50   Input ~ 0
+C2D
+Wire Wire Line
+	2850 3800 3050 3800
+Text GLabel 2850 4000 0    50   Input ~ 0
+TX2
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5C2F885D
+P 3050 4000
+F 0 "TP4" V 3004 4188 50  0000 L CNN
+F 1 "TX2" V 3095 4188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3250 4000 50  0001 C CNN
+F 3 "~" H 3250 4000 50  0001 C CNN
+	1    3050 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 4000 3050 4000
+Text GLabel 2850 4200 0    50   Output ~ 0
+RC_IN
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5C2FD85C
 P 3050 4200
-F 0 "TP2" V 3004 4387 50  0000 L CNN
-F 1 "C2CK" V 3095 4387 50  0000 L CNN
+F 0 "TP5" V 3004 4387 50  0000 L CNN
+F 1 "RC_IN" V 3095 4387 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3250 4200 50  0001 C CNN
 F 3 "~" H 3250 4200 50  0001 C CNN
 	1    3050 4200
 	0    1    1    0   
 $EndComp
-Text GLabel 2850 4200 0    50   Input ~ 0
-C2CK
 Wire Wire Line
 	2850 4200 3050 4200
 $Comp
-L Connector:TestPoint TP3
-U 1 1 5C2F3D95
-P 3050 4400
-F 0 "TP3" V 3004 4587 50  0000 L CNN
-F 1 "C2D" V 3095 4587 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3250 4400 50  0001 C CNN
-F 3 "~" H 3250 4400 50  0001 C CNN
-	1    3050 4400
-	0    1    1    0   
-$EndComp
-Text GLabel 2850 4400 0    50   Input ~ 0
-C2D
-Wire Wire Line
-	2850 4400 3050 4400
-Text GLabel 2850 4600 0    50   Input ~ 0
-TX2
-$Comp
-L Connector:TestPoint TP4
-U 1 1 5C2F885D
-P 3050 4600
-F 0 "TP4" V 3004 4788 50  0000 L CNN
-F 1 "TX2" V 3095 4788 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3250 4600 50  0001 C CNN
-F 3 "~" H 3250 4600 50  0001 C CNN
-	1    3050 4600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2850 4600 3050 4600
-Text GLabel 2850 4800 0    50   Output ~ 0
-RC_IN
-$Comp
-L Connector:TestPoint TP5
-U 1 1 5C2FD85C
-P 3050 4800
-F 0 "TP5" V 3004 4987 50  0000 L CNN
-F 1 "RC_IN" V 3095 4987 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3250 4800 50  0001 C CNN
-F 3 "~" H 3250 4800 50  0001 C CNN
-	1    3050 4800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2850 4800 3050 4800
-$Comp
 L Connector:Conn_01x03_Male J1
 U 1 1 5C302F31
-P 1200 4400
-F 0 "J1" H 1306 4678 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 1306 4587 50  0000 C CNN
-F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 1200 4400 50  0001 C CNN
-F 3 "~" H 1200 4400 50  0001 C CNN
-	1    1200 4400
+P 1200 3800
+F 0 "J1" H 1306 4078 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 1306 3987 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1200 3800 50  0001 C CNN
+F 3 "~" H 1200 3800 50  0001 C CNN
+	1    1200 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0112
 U 1 1 5C30CB8C
-P 1500 4600
-F 0 "#PWR0112" H 1500 4350 50  0001 C CNN
-F 1 "GND" H 1505 4427 50  0000 C CNN
-F 2 "" H 1500 4600 50  0001 C CNN
-F 3 "" H 1500 4600 50  0001 C CNN
-	1    1500 4600
+P 1500 4000
+F 0 "#PWR0112" H 1500 3750 50  0001 C CNN
+F 1 "GND" H 1505 3827 50  0000 C CNN
+F 2 "" H 1500 4000 50  0001 C CNN
+F 3 "" H 1500 4000 50  0001 C CNN
+	1    1500 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 4500 1500 4500
-Text GLabel 1600 4300 2    50   Output ~ 0
+	1400 3900 1500 3900
+Text GLabel 1600 3700 2    50   Output ~ 0
 RC_IN
 Wire Wire Line
-	1400 4300 1600 4300
+	1400 3700 1600 3700
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5C32EFFC
-P 1400 4400
-F 0 "TP1" V 1354 4587 50  0000 L CNN
-F 1 "SERVO_TP" V 1445 4587 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1600 4400 50  0001 C CNN
-F 3 "~" H 1600 4400 50  0001 C CNN
-	1    1400 4400
+P 1400 3800
+F 0 "TP1" V 1354 3987 50  0000 L CNN
+F 1 "SERVO_TP" V 1445 3987 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1600 3800 50  0001 C CNN
+F 3 "~" H 1600 3800 50  0001 C CNN
+	1    1400 3800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1500 4600 1500 4500
+	1500 4000 1500 3900
 $Comp
 L blheli_esc:PAD PAD1
 U 1 1 5C33EEBB
@@ -1040,4 +1041,49 @@ Connection ~ 6300 1400
 Wire Wire Line
 	5700 1750 6300 1750
 Connection ~ 5700 1750
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5C2CA069
+P 3050 4650
+F 0 "TP6" V 3004 4838 50  0000 L CNN
+F 1 "PHASE_A" V 3095 4838 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 3250 4650 50  0001 C CNN
+F 3 "~" H 3250 4650 50  0001 C CNN
+	1    3050 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 4650 3050 4650
+Text GLabel 2850 4900 0    50   Input ~ 0
+PHASE_B
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5C2D647C
+P 3050 4900
+F 0 "TP7" V 3004 5087 50  0000 L CNN
+F 1 "PHASE_B" V 3095 5087 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 3250 4900 50  0001 C CNN
+F 3 "~" H 3250 4900 50  0001 C CNN
+	1    3050 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 4900 3050 4900
+Text GLabel 2850 5150 0    50   Input ~ 0
+PHASE_C
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5C2DC7CE
+P 3050 5150
+F 0 "TP8" V 3004 5337 50  0000 L CNN
+F 1 "PHASE_C" V 3095 5337 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 3250 5150 50  0001 C CNN
+F 3 "~" H 3250 5150 50  0001 C CNN
+	1    3050 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 5150 3050 5150
+Text GLabel 10700 1300 2    50   Output ~ 0
+PHASE_A
 $EndSCHEMATC
