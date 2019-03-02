@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name blheli_esc-rescue)(type Legacy)(uri ${KIPRJMOD}/blheli_esc-rescue.lib)(options "")(descr ""))
+)

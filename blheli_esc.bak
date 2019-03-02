@@ -1084,4 +1084,6 @@ F 3 "~" H 3250 5150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2850 5150 3050 5150
+Text GLabel 10700 1300 2    50   Output ~ 0
+PHASE_A
 $EndSCHEMATC
